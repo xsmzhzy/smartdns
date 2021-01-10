@@ -2,7 +2,7 @@
 
 **[English](ReadMe_en.md)**
 
-![SmartDNS](doc/smartdns-banner.png)  
+![SmartDNS](https://github.com/pymumu/test/releases/download/blob/smartdns-banner.png)  
 SmartDNS是一个运行在本地的DNS服务器，SmartDNS接受本地客户端的DNS查询请求，从多个上游DNS服务器获取DNS查询结果，并将访问速度最快的结果返回给客户端，提高网络访问速度。
 同时支持指定特定域名IP地址，并高性匹配，达到过滤广告的效果。  
 与dnsmasq的all-servers不同，smartdns返回的是访问速度最快的解析结果。 (详细差异请看[FAQ](#faq))  
@@ -117,7 +117,7 @@ rtt min/avg/max/mdev = 5.954/6.133/6.313/0.195 ms
 
 ## 架构
 
-![Architecture](doc/architecture.png)
+![Architecture](https://github.com/pymumu/test/releases/download/blob/architecture.png)
 
 1. SmartDNS接收本地网络设备的DNS查询请求，如PC，手机的查询请求。  
 2. SmartDNS将查询请求发送到多个上游DNS服务器，可采用标准UDP查询，非标准端口UDP查询，及TCP查询。  
@@ -528,7 +528,7 @@ https://github.com/pymumu/smartdns/releases
 |nameserver|指定域名使用server组解析|无|nameserver /domain/[group\|-], `group`为组名，`-`表示忽略此规则，配套server中的`-group`参数使用| nameserver /www.example.com/office
 |ipset|域名IPSET|None|ipset /domain/[ipset\|-], `-`表示忽略|ipset /www.example.com/pass
 |ipset-timeout|设置IPSET超时功能启用|auto|[yes]|ipset-timeout yes
-|domain-rules|设置域名规则|无|domain-rules /domain/ [-rules...]<br>`[-speed-check-mode]`: 测速模式，参考`speed-check-mode`配置<br>`[-address]`: 参考`address`配置<br>`[-nameserver]`: 参考`nameserver`配置<br>`[-ipset]`:参考`ipset`配置|domain-rules /www.example.com/ -speed-check-mode none
+|domain-rules|设置域名规则|无|domain-rules /domain/ [-rules...]<br>`[-c\|-speed-check-mode]`: 测速模式，参考`speed-check-mode`配置<br>`[-a\|-address]`: 参考`address`配置<br>`[-n\|-nameserver]`: 参考`nameserver`配置<br>`[-p\|-ipset]`:参考`ipset`配置<br>`[-d\|-dualstack-ip-selection]`: 参考`dualstack-ip-selection`|domain-rules /www.example.com/ -speed-check-mode none
 |bogus-nxdomain|假冒IP地址过滤|无|[ip/subnet]，可重复| bogus-nxdomain 1.2.3.4/16
 |ignore-ip|忽略IP地址|无|[ip/subnet]，可重复| ignore-ip 1.2.3.4/16
 |whitelist-ip|白名单IP地址|无|[ip/subnet]，可重复| whitelist-ip 1.2.3.4/16
@@ -664,11 +664,11 @@ smartdns包含了编译软件包的脚本，支持编译luci，debian，openwrt�
 
 ### Alipay 支付宝
 
-![alipay](doc/alipay_donate.jpg)
+![alipay](https://github.com/pymumu/test/releases/download/blob/alipay_donate.jpg)
 
 ### Wechat 微信
   
-![wechat](doc/wechat_donate.jpg)
+![wechat](https://github.com/pymumu/test/releases/download/blob/wechat_donate.jpg)
 
 ## 开源声明
 
